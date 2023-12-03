@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Black Ops One", cursive;
+  background: hsla(12, 84%, 68%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(12, 84%, 68%, 1) 50%,
+    hsla(343, 100%, 66%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(12, 84%, 68%, 1) 50%,
+    hsla(343, 100%, 66%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(12, 84%, 68%, 1) 50%,
+    hsla(343, 100%, 66%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#f28367", endColorstr="#ff5282", GradientType=1 );
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 100px auto;
+  /* border: 1px solid gray; */
+}
+
+.mainInput {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  /* border-radius: 60px; */
+  /* background-color: #54a1ff82; */
+  /* color: white; */
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+  padding: 0.8rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+.btn {
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+  border-radius: 10px;
+
+  background-color: #54a0ff;
+  color: white;
+}
+
+.todo {
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+  padding: 0.8rem;
+}
+
+.todo input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  height: 20px !important;
+  width: 20px !important;
+  border-radius: 50% !important;
+  border: 2px solid gray;
+}
+
+.todo input[type="checkbox"]:checked {
+  background-color: #54a0ff;
+}
+.todo input[type="checkbox"]:checked:before {
+  position: absolute;
+  color: #ffffff;
+  font-weight: 900;
+  content: "\f00c";
+
+  font-family: "Font Awesome 5 Free";
+  font-size: 0.8em;
+  line-height: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.count {
+  text-align: center;
+  padding: 10px;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.image {
+  margin-bottom: 1rem;
+}
+.wrapper img {
+  display: inline-block;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.error {
+  display: none;
+  text-align: center;
+}
